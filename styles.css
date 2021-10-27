@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  height: 100%;
+}
+
+.top-navbar {
+  display: flex;
+  overflow: hidden;
+  max-width: 1000px;
+  width: 100%;
+}
+
+
+.nav-menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.top-navbar a {
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  font-size: larger;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+}
+
+.top-navbar a:hover {
+  background-color: rgba(247, 212, 59, 0.5);
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+}
+
+
+.top-navbar .active {
+  color: rgb(191, 149, 91);
+}
+
+.top-navbar .icon {
+  display: none;
+}
+
+.hero-home-header {
+  align-items: center;
+  background-image: url("img/big_gear5.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.header-description {
+  background-color: rgba(179, 6, 6, 0.20);
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 3rem;
+  max-width: 1000px;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.header-description h1 {
+  padding-bottom: 1rem;
+}
+
+.hero-about {
+  background-image: url("img/small_gears1.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.about-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 1000px;
+  width: 1000px;
+  align-items: flex-end;
+}
+
+.about-description h2, p {
+  padding-bottom: 1rem;
+}
+
+.about-description a:link {
+  text-decoration: none;
+  color: rgba(247, 212, 59, 0.5);
+}
+
+.about-description article {
+  background-color: rgba(179, 6, 6, 0.20);
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  padding: 1.5rem;
+  max-width: 600px;
+}
+
+.about-description a:visited {
+  color: rgba(247, 212, 59, 0.5);
+}
+
+.hero-blog-header {
+  align-items: center;
+  background-image: url("img/pexels-pixabay-235985.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+.blog-description {
+  background-color: rgba(155, 11, 11, 0.20);
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  margin: 0 auto;
+  max-width: 40%;
+  padding: 1.5rem;
+}
+
+.hero-footer {
+  background-image: url("img/small_gears4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50%;
+}
+
+
+.footer-left-nav ul {
+  list-style-type: none;
+  padding: 2rem;
+}
+
+.footer-left-nav a {
+  text-decoration: none;
+}
+
+.footer-middle-icons ul {
+  display: flex;
+  list-style-type: none;
+  padding: 2rem;
+}
+
+.footer-middle-icons ul li {
+  margin: 3rem;
+}
+
+.footer-right form {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.footer-right form input, textarea {
+ margin: 0.5rem;
+}
+
+.footer-right button {
+  height: 25px;
+  width: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .top-navbar ul{display: none;}
+  .top-navbar.responsive {position: relative;}
+  .top-navbar.responsive ul {
+    display: block;
+    width: 100%;
+  }
+  .top-navbar.responsive li {
+    background-color: brown;
+    width: 100%;
+  }
+  .top-navbar.responsive li a {
+    width: 100%;
+  }
+  .top-navbar a.icon {display: block;}
+  .top-navbar .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
